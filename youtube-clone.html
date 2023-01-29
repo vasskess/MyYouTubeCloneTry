@@ -10,11 +10,41 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles/style.css" class="rel" />
+    <link rel="stylesheet" href="styles/generic.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/video.css" />
     <title>YouTube-Clone</title>
   </head>
   <body>
-    <input class="search-bar" type="text" placeholder="Search" />
+    <div class="header">
+      <div class="left-section">
+        <img class="hamburger-menu" src="icons/hamburger-menu.svg" />
+        <img class="youtube-logo" src="icons/youtube-logo.svg" />
+      </div>
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search" />
+        <button class="search-button">
+          <img class="search-icon" src="icons/search.svg" />
+        </button>
+        <button class="voice-search-button">
+          <img class="voice-search-icon" src="icons/voice-search-icon.svg" />
+        </button>
+      </div>
+      <div class="right-section">
+        <img class="upload-icon" src="icons/upload.svg" alt="upload" />
+        <img class="apps-icon" src="icons/youtube-apps.svg" alt="apps" />
+        <img
+          class="notification-icon"
+          src="icons/notifications.svg"
+          alt="notification"
+        />
+        <img
+          class="my-pic"
+          src="channel-pics/mypic.jpg"
+          alt="channel-picture"
+        />
+      </div>
+    </div>
     <div class="video-grid">
       <div class="video-preview">
         <div class="thumbnail-row">
@@ -25,13 +55,11 @@
             <img class="profile-picture" src="channel-pics/channel-1.jpg" />
           </div>
           <div class="video-info">
-            <div>
-              <p class="video-title">
-                Reacting to Beautiful AI Art Web Designs &#43; How to build them
-              </p>
-              <p class="video-author">Codex Community</p>
-              <p class="video-stats">216K views &#183; 2 weeks ago</p>
-            </div>
+            <p class="video-title">
+              Reacting to Beautiful AI Art Web Designs &#43; How to build them
+            </p>
+            <p class="video-author">Codex Community</p>
+            <p class="video-stats">216K views &#183; 2 weeks ago</p>
           </div>
         </div>
       </div>
