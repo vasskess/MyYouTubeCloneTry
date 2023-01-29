@@ -18,9 +18,11 @@
   height: 24px;
   margin-left: 24px;
   margin-right: 24px;
+  cursor: pointer;
 }
 .youtube-logo {
   height: 20px;
+  cursor: pointer;
 }
 
 .middle-section {
@@ -30,6 +32,7 @@
   margin-right: 35px;
   max-width: 500px;
   align-items: center;
+  cursor: pointer;
 }
 .search-bar {
   flex: 1;
@@ -42,6 +45,7 @@
   border-radius: 20px 0px 0px 20px;
   box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
   width: 0;
+  cursor: pointer;
 }
 .search-bar::placeholder {
   font-family: Roboto, Arial;
@@ -57,10 +61,36 @@
   margin-left: -1px;
   margin-right: 10px;
   border-radius: 0px 20px 20px 0px;
+  cursor: pointer;
+}
+.search-button,
+.voice-search-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.search-button .tooltip,
+.voice-search-button .tooltip {
+  position: absolute;
+  background-color: rgb(184, 184, 184);
+  color: #ffffff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  bottom: -24px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip {
+  opacity: 1;
 }
 .search-icon {
   height: 25px;
-  margin-top: 4px;
+  cursor: pointer;
 }
 .voice-search-button {
   height: 40px;
@@ -68,10 +98,13 @@
   border-radius: 20px;
   border: none;
   background-color: rgb(245, 245, 245);
+  cursor: pointer;
 }
 .voice-search-icon {
   height: 24px;
-  margin-top: 4px;
+}
+.voice-search-button:hover {
+  background-color: lightgrey;
 }
 .right-section {
   width: 180px;
@@ -84,9 +117,17 @@
 .upload-icon {
   height: 24px;
   margin-left: 50px;
+  cursor: pointer;
+}
+.upload-icon:hover {
+  transform: scale(2);
 }
 .notification-icon {
   height: 24px;
+  cursor: pointer;
+}
+.notification-icon:hover {
+  transform: scale(2);
 }
 .notifications-icon-container {
   position: relative;
@@ -105,4 +146,8 @@
 .my-pic {
   height: 32px;
   border-radius: 16px;
+  cursor: pointer;
+}
+.my-pic:hover {
+  transform: scale(1.5);
 }

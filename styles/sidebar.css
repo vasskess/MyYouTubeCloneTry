@@ -5,4 +5,26 @@
   top: 55px;
   background-color: #ffffff;
   width: 72px;
+  padding-top: 5px;
+  padding-right: 30px;
+}
+.sidebar-link {
+  height: 74px;
+  margin-bottom: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.sidebar-link:hover {
+  background-color: rgb(241, 241, 241);
+}
+.sidebar-link img {
+  height: 24px;
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+.sidebar-link a {
+  font-family: Roboto, Arial;
+  font-size: 12px;
 }

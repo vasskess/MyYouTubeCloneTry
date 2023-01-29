@@ -17,21 +17,23 @@
     <title>YouTube-Clone</title>
   </head>
   <body>
-    <div class="header">
-      <div class="left-section">
+    <header class="header">
+      <section class="left-section">
         <img class="hamburger-menu" src="icons/hamburger-menu.svg" />
         <img class="youtube-logo" src="icons/youtube-logo.svg" />
-      </div>
-      <div class="middle-section">
+      </section>
+      <section class="middle-section">
         <input class="search-bar" type="text" placeholder="Search" />
         <button class="search-button">
           <img class="search-icon" src="icons/search.svg" />
+          <div class="tooltip">Search</div>
         </button>
         <button class="voice-search-button">
           <img class="voice-search-icon" src="icons/voice-search-icon.svg" />
+          <div class="tooltip">Search with your voice</div>
         </button>
-      </div>
-      <div class="right-section">
+      </section>
+      <section class="right-section">
         <img class="upload-icon" src="icons/upload.svg" alt="upload" />
         <div class="notifications-icon-container">
           <img
@@ -46,125 +48,322 @@
           src="channel-pics/mypic.jpg"
           alt="channel-picture"
         />
-      </div>
-    </div>
-    <div class="sidebar">Sidebar</div>
-    <div class="video-grid">
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/thumbnail-1.webp" />
-          <div class="video-time">25:16</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="channel-pics/channel-1.jpg" />
-          </div>
-          <div class="video-info">
-            <p class="video-title">
-              Reacting to Beautiful AI Art Web Designs &#43; How to build them
-            </p>
-            <p class="video-author">Codex Community</p>
-            <p class="video-stats">223K views &#183; 2 weeks ago</p>
-          </div>
-        </div>
-      </div>
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/thumbnail-2.webp" />
-          <div class="video-time">15:22</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="channel-pics/channel-2.jpg" />
-          </div>
-          <div class="video-info">
-            <div>
-              <p class="video-title">
-                My Visual Studio Code Setup for Web Development
-              </p>
-              <p class="video-author">ForrestKnight</p>
-              <p class="video-stats">511K views &#183; 5 months ago</p>
+      </section>
+    </header>
+    <main>
+    <nav class="sidebar">
+      <ul>
+        <li class="sidebar-link">
+          <img src="icons/house-solid.svg" alt="Home icon" />
+          <a href="#">Home</a>
+        </li>
+        <li class="sidebar-link">
+          <img src="icons/compass-regular.svg" alt="Explore icon" />
+          <a href="#">Explore</a>
+        </li>
+        <li class="sidebar-link">
+          <img src="icons/subscriptions.svg" alt="Subscriptions icon" />
+          <a href="#">Subscriptions</a>
+        </li>
+        <li class="sidebar-link">
+          <img src="icons/originals.svg" alt="Originals icon" />
+          <a href="#">Originals</a>
+        </li>
+        <li class="sidebar-link">
+          <img src="icons/youtube-music.svg" alt="YouTube Music icon" />
+          <a href="#">YouTubeMusic</p>
+        </li>
+        <li class="sidebar-link">
+          <img src="icons/library.svg" alt="Library icon" />
+          <a href="#">Library</a>
+        </li>
+      </ul>
+    </nav>
+    <section class="video-grid">
+      <article class="video-preview">
+        <a href="https://www.youtube.com/watch?v=Oy9y5w9yre0" target="_blank">
+          <section class="thumbnail-row">
+            <img
+              class="thumbnail"
+              src="thumbnails/thumbnail-1.webp"
+              alt="Video Thumbnail"
+            />
+            <time class="video-time">12:35</time>
+          </section>
+          <section class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channel-pics/channel-1.jpg"
+                alt="Channel Profile Picture"
+              />
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/thumbnail-3.webp" />
-          <div class="video-time">8:11</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="channel-pics/channel-3.jpg" />
-          </div>
-          <div class="video-info">
-            <div>
-              <p class="video-title">Python Django Explained In 8 Minutes</p>
-              <p class="video-author">Dennis Ivy</p>
-              <p class="video-stats">101K views &#183; 1 year ago</p>
+            <div class="video-info">
+              <h2 class="video-title">Python defaultdict</h2>
+              <p class="video-author">Fireship</p>
+              <p class="video-stats">1.7K views &#183; 2 year ago</p>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/thumbnail-4.webp" />
-          <div class="video-time">6:56</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="channel-pics/channel-4.jpg" />
-          </div>
-          <div class="video-info">
-            <div>
-              <p class="video-title">
-                Stop wasting time when you're learning to code!
-              </p>
-              <p class="video-author">Coder Coder</p>
-              <p class="video-stats">1.3M views &#183; 1 year ago</p>
+          </section>
+        </a>
+      </article>
+      <article class="video-preview">
+        <a href="https://www.youtube.com/watch?v=H2gvHxC9gFY" target="_blank">
+          <section class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-2.webp" />
+            <time class="video-time">15:22</time>
+          </section>
+          <section class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pics/channel-2.jpg" />
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/thumbnail-5.webp" />
-          <div class="video-time">8:33</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="channel-pics/channel-5.jpg" />
-          </div>
-          <div class="video-info">
-            <div>
-              <p class="video-title">Zero to Full-Time Programmer in 5 Steps</p>
-              <p class="video-author">Kenny Gunderman</p>
-              <p class="video-stats">1.7M views &#183; 1 year ago</p>
+            <div class="video-info">
+              <div>
+                <h2 class="video-title">
+                  My Visual Studio Code Setup for Web Development
+                </h2>
+                <p class="video-author">ForrestKnight</p>
+                <p class="video-stats">511K views &#183; 5 months ago</p>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/thumbnail-6.webp" />
-          <div class="video-time">17:42</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="channel-pics/channel-6.jpg" />
-          </div>
-          <div class="video-info">
-            <div>
-              <p class="video-title">
-                you need to learn Python RIGH NOW!! // EP 1
-              </p>
-              <p class="video-author">NetworkChuck</p>
-              <p class="video-stats">1.5M views &#183; 1 year ago</p>
+          </section>
+        </a>
+      </article>
+      <article class="video-preview">
+        <a href="https://www.youtube.com/watch?v=0sMtoedWaf0" target="_blank">
+          <section class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-3.webp" />
+            <time class="video-time">8:11</time>
+          </section>
+          <section class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pics/channel-3.jpg" />
             </div>
-          </div>
-        </div>
+            <div class="video-info">
+              <div>
+                <h2 class="video-title">
+                  Python Django Explained In 8 Minutes
+                </h2>
+                <p class="video-author">Dennis Ivy</p>
+                <p class="video-stats">101K views &#183; 1 year ago</p>
+              </div>
+            </div>
+          </section>
+        </a>
+      </article>
+      <article class="video-preview">
+        <a href="https://www.youtube.com/watch?v=s6dMWzZKjTs" target="_blank">
+          <section class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-4.webp" />
+            <time class="video-time">6:56</time>
+          </section>
+          <section class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pics/channel-4.jpg" />
+            </div>
+            <div class="video-info">
+              <div>
+                <h2 class="video-title">
+                  Stop wasting time when you're learning to code!
+                </h2>
+                <p class="video-author">Coder Coder</p>
+                <p class="video-stats">1.3M views &#183; 1 year ago</p>
+              </div>
+            </div>
+          </section>
+        </a>
+      </article>
+      <article class="video-preview">
+        <a
+          href="https://www.youtube.com/watch?v=s9iPo9YMU70&t=17s"
+          target="_blank"
+        >
+          <section class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-5.webp" />
+            <time class="video-time">8:33</time>
+          </section>
+          <section class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pics/channel-5.jpg" />
+            </div>
+            <div class="video-info">
+              <div>
+                <h2 class="video-title">
+                  Zero to Full-Time Programmer in 5 Steps
+                </h2>
+                <p class="video-author">Kenny Gunderman</p>
+                <p class="video-stats">1.7M views &#183; 1 year ago</p>
+              </div>
+            </div>
+          </section>
+        </a>
+      </article>
+      <div class="video-preview">
+        <a href="https://www.youtube.com/watch?v=mRMmlo_Uqcs" target="_blank">
+          <section class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-6.webp" />
+            <time class="video-time">17:42</time>
+          </section>
+          <section class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pics/channel-6.jpg" />
+            </div>
+            <div class="video-info">
+              <div>
+                <h2 class="video-title">
+                  you need to learn Python RIGH NOW!! // EP 1
+                </h2>
+                <p class="video-author">NetworkChuck</p>
+                <p class="video-stats">1.5M views &#183; 1 year ago</p>
+              </div>
+            </div>
+          </section>
+        </a>
       </div>
-    </div>
+      <article class="video-preview">
+        <a href="https://www.youtube.com/watch?v=o0XbHvKxw7Y" target="_blank">
+          <section class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-7.webp" />
+            <time class="video-time">18:32:46</time>
+          </section>
+          <section class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pics/channel-7.jpg" />
+            </div>
+            <div class="video-info">
+              <div>
+                <h2 class="video-title">
+                  Django For Everybody - Full Python University Course
+                </h2>
+                <p class="video-author">FreeCodeCamp.org</p>
+                <p class="video-stats">925K views &#183; 1 year ago</p>
+              </div>
+            </div>
+          </section>
+        </a>
+      </article>
+      <article class="video-preview">
+        <a href="https://www.youtube.com/watch?v=NwKB4HZnIHM" target="_blank">
+          <section class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-8.webp" />
+            <time class="video-time">5:38</time>
+          </section>
+          <section class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pics/channel-8.jpg" />
+            </div>
+            <div class="video-info">
+              <div>
+                <h2 class="video-title">
+                  DJANGO VS FLASK - FULL COMPARISON IN 5 MIN
+                </h2>
+                <p class="video-author">TECH IN 5 MINUTES</p>
+                <p class="video-stats">57K views &#183; 1 year ago</p>
+              </div>
+            </div>
+          </section>
+        </a>
+      </article>
+      <article class="video-preview">
+        <a href="https://www.youtube.com/watch?v=wRNinF7YQqQ" target="_blank">
+          <section class="thumbnail-row">
+            <img
+              class="thumbnail"
+              src="thumbnails/thumbnail-9.webp"
+              alt="Video Thumbnail"
+            />
+            <time class="video-time">1:00:00</time>
+          </section>
+          <section class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channel-pics/channel-9.jpg"
+                alt="Channel Profile Picture"
+              />
+            </div>
+            <div class="video-info">
+              <h2 class="video-title">CSS Full Course 🎨 (FREE)</h2>
+              <p class="video-author">Bro Code</p>
+              <p class="video-stats">233K views &#183; 1 year ago</p>
+            </div>
+          </section>
+        </a>
+      </article>
+      <article class="video-preview">
+        <a href="https://www.youtube.com/watch?v=Xc6G3oV24yE" target="_blank">
+          <section class="thumbnail-row">
+            <img
+              class="thumbnail"
+              src="thumbnails/thumbnail-10.webp"
+              alt="Video Thumbnail"
+            />
+            <time class="video-time">13:34</time>
+          </section>
+          <section class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channel-pics/channel-10.jpg"
+                alt="Channel Profile Picture"
+              />
+            </div>
+            <div class="video-info">
+              <h2 class="video-title">
+                Top 10 CSS One Liners That Will Blow Your Mind
+              </h2>
+              <p class="video-author">developedbyed</p>
+              <p class="video-stats">376K views &#183; 3 months ago</p>
+            </div>
+          </section>
+        </a>
+      </article>
+      <article class="video-preview">
+        <a href="https://www.youtube.com/watch?v=ok-plXXHlWw" target="_blank">
+          <section class="thumbnail-row">
+            <img
+              class="thumbnail"
+              src="thumbnails/thumbnail-11.webp"
+              alt="Video Thumbnail"
+            />
+            <time class="video-time">1:00:00</time>
+          </section>
+          <section class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channel-pics/channel-11.jpg"
+                alt="Channel Profile Picture"
+              />
+            </div>
+            <div class="video-info">
+              <h2 class="video-title">HTML in 100 Seconds</h2>
+              <p class="video-author">Fireship</p>
+              <p class="video-stats">289K views &#183; 1 year ago</p>
+            </div>
+          </section>
+        </a>
+      </article>
+      <article class="video-preview">
+        <a href="https://www.youtube.com/watch?v=qi1Irnvc-EA" target="_blank">
+          <section class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-12.webp" />
+            <time class="video-time">25:16</time>
+          </section>
+          <section class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pics/channel-12.jpg" />
+            </div>
+            <div class="video-info">
+              <h2 class="video-title">
+                Reacting to Beautiful AI Art Web Designs &#43; How to build them
+              </h2>
+              <p class="video-author">Codex Community</p>
+              <p class="video-stats">223K views &#183; 2 weeks ago</p>
+            </div>
+          </section>
+        </a>
+      </article>
+    </section>
+  </main>
   </body>
-  <footer></footer>
 </html>
