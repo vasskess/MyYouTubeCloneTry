@@ -5,10 +5,10 @@ Created for educational purposes to exercise my knowledge of HTML and CSS.
 It has no back-end functionality and only contains working links   
 ######
 ------
-Top view with hover over Voice Search Button
+Top view with hover over Search Button
 ------
-![picture-top](https://user-images.githubusercontent.com/96621183/215453965-995a7b72-5e87-42dc-b67b-576b4cf0a065.png)
+![picture-1](https://user-images.githubusercontent.com/96621183/215732659-8a8f77a9-899b-4588-8e46-2df728466a11.png)
 
-Bottom view with hover over Search Button
+Bottom view with hover over Voice Search Button
 ------
-![picture-bottom](https://user-images.githubusercontent.com/96621183/215454051-4edd8cd0-8423-4ef6-9c3c-bdacf12cd1de.png)
+![picture-2](https://user-images.githubusercontent.com/96621183/215732717-646bfb9f-fbb0-4aac-8452-de85063ba2d5.png)
